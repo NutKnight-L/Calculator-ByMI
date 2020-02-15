@@ -10,11 +10,11 @@ body
 #container {
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: #EFEFEE;
 }
 #menu {
   width: 100%;
-  background-color: #EFEFEE;
+  background: #EFEFEE;
   height: 8%;
 }
 #menu table {
@@ -32,11 +32,13 @@ body
   width: 100%;
   height: 37%;
   background-color: #EFEFEE;
+  display: block;
 }
 #input {
   width: 100%;
   height: 55%;
   background-color: #fff;
+  display: block;
 }
 #input button
 {
@@ -46,4 +48,56 @@ body
   background-color: #fff;
   font-size: 16pt;
   color: #505050;
+}
+#huansuan {
+  display: none;
+  width: 100%;
+  height: 92%;
+  background: #fff;
+}
+#huansuan ul
+{
+}
+#huansuan table
+{
+  width: 100%;
+  height: 100%;
+  color: #848484;
+  text-align: center;
+  font-size: 10pt;
+  border-collapse: collapse; /* 消除边框的空白 */
+}
+#huansuan table td
+{
+  width: 1%;
+  border: 1px solid #e8e8e8;
+}
+#shuidai {
+  width: 100%;
+  height: 92%;
+  display: none;
+  background: #fff;
+}
+#head {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#head button
+{
+  width: 40%;
+  border: 0.1px solid #ccc;
+  background: none;
+}
+#box {
+  width: 100%;
+  height: 90%;
+  display: block;
+}
+#box1 {
+  width: 100%;
+  height: 90%;
+  display: none;
 }
