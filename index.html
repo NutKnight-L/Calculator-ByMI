@@ -3,6 +3,7 @@
   <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>MI•计算器</title>
+	<script src="js/scripts.js"></script>
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
@@ -11,14 +12,15 @@
 		<table>
 		  <tr>
 			<td>@</td>
-			<td style="text-align: right; color: OrangeRed;">计算</td>
-			<td>换算</td>
-			<td style="text-align: left;">税贷</td>
+			<td><button style="font-size: 13pt;border: 0;background: none;color: OrangeRed;" id="btn1">计算</button></td>
+			<td><button style="border: 0;background: none;color: #606060;" id="btn2">换算</button></td>
+			<td><button style="border: 0;background: none;color: #606060;" id="btn3">税贷</button></td>
 			<td>:</td>
 		  </tr>
 		</table>
 	  </div>
 	  <div id="show">
+		0
 	  </div>
 	  <div id="input">
 		<button style="color: OrangeRed;">AC</button><button>&lt;x</button><button>%</button><button>÷</button><br>
@@ -26,6 +28,46 @@
 		<button>4</button><button>5</button><button>6</button><button>-</button><br>
 		<button>1</button><button>2</button><button>3</button><button>+</button><br>
 		<button style="color: OrangeRed;">@</button><button>0</button><button>.</button><button style="color: #fff; background-color: OrangeRed;">=</button>
+	  </div>
+	  <div id="huansuan">
+		<table>
+		  <tr>
+			<td>汇率转换</td>
+			<td>亲戚称呼计算</td>
+			<td>长度转换</td>
+		  </tr>
+		  <tr>
+			<td>面积转换</td>
+			<td>体积转换</td>
+			<td>温度转换</td>
+		  </tr>
+		  <tr>
+			<td>速度转换</td>
+			<td>时间转换</td>
+			<td>重量转换</td>
+		  </tr>
+		  <tr>
+			<td>大写数字</td>
+		  </tr>
+		</table>
+	  </div>
+	  <div id="shuidai">
+		<div id="head">
+		  <button id="geshui" style="background: #ccc;color: #000;">个税</button><button id="fangdai" style="color: #ccc;">房贷</button>
+		</div>
+		<div id="box">
+		  税前收入（元）<br>
+		  <input type="text" placeholder="请输入您的税前收入"><br>
+		  <input type="radio" name="rd1">月薪
+		  <input type="radio" name="rd1">年终奖
+		</div>
+		<div id="box1">
+		  贷款总额（万）<br>
+		  <input type="text" placeholder="请输入您的贷款总额"><br>
+		  <input type="radio" name="rd2">商业贷款
+		  <input type="radio" name="rd2">公积金贷款
+		  <input type="radio" name="rd2">组合贷款
+		</div>
 	  </div>
 	</div>
   </body>
